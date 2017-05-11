@@ -2,3 +2,7 @@
 /node_modules/*
 /test/*
 /tests/*
+/src/images/bin/*
+/install/*
+/assets/*
+/manager/*

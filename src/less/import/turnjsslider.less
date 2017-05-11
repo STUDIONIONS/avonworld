@@ -1,0 +1,94 @@
+.turnjs {
+	&-slider {
+		width: auto !important;
+		position: relative;
+		position: relative;
+		z-index: 400;
+		.thumbnail {
+			position: absolute;
+			width:115px;
+			background: rgba(0, 0, 0, 0.5);
+			z-index: 10000;
+			display: none;
+			border-radius: 5px;
+			transform: translate3d(0, 50px, 0) scale(.1, .1);
+			transition: transform .2s;
+			div {
+				background-color: rgba(255,255,255, 0.3);
+				margin:7px;
+				&:after {
+					display: block;
+					background-color: rgba(255, 255, 255, 0.8);
+					color: #000;
+					font-size: 10px;
+					font-weight: bold;
+					text-align: center;
+					content: "Page №" attr(data-page);
+				}
+			}
+		}
+		/* UI */
+		.ui {
+			&-widget {
+				&-overlay {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			&-slider {
+				position: relative;
+				text-align: left;
+				&-handle {
+					position: absolute;
+					z-index: 0;
+					width: 80px;
+					height: 8px;
+					cursor: default;
+					border-radius: 5px;
+					border: 1px solid white;
+					background-color: black;
+					opacity: .4;
+					display: block;
+					transition: opacity .2s;
+				}
+				&-horizontal {
+					height: 8px;
+					margin-left: 15px;
+					.ui {
+						&-slider {
+							&-handle {
+								margin-left: -40px;
+								margin-top: -1px;
+								cursor: pointer;
+								outline: none !important;
+							}
+						}
+					}
+				}
+			}
+			&-state {
+				&-disabled {
+					cursor: default !important;
+				}
+				&-hover {
+					opacity: .6;
+					.thumbnail {
+						display: block;
+						opacity: 0;
+					}
+				}
+				&-active {
+					opacity: 1;
+					.thumbnail {
+						display: block;
+						opacity: 1;
+						transform: scale(1, 1);
+					}
+				}
+			}
+		}
+	}
+}

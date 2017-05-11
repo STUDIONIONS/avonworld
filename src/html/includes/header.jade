@@ -1,0 +1,49 @@
+// header site
+div.header.row
+	div.container
+		div.row.flex
+			div.col-md-4.col-sm-6.header_logotip
+				a(href="/")
+					img.img-responsive.center-block(src="#{templatedir}/images/avon_logotip.svg" alt="#{title}")
+			div.col-md-4.col-sm-6.header_block.text-center
+				.header_description
+					p.header_title
+						|&nbsp;
+					p.header_description_wrapper
+						strong
+							Обращаем внимание, что в Электронном каталоге на сайте могут быть представлены не все действующие специальные предложения.
+				a.btn.btn-avon-transparent.text-uppercase.text-center(href='javascript:;') Каталог
+			div.col-md-4.col-xs-12.header_block.text-center
+				.header_description
+					p.header_title
+						strong.header_title_wrapper.text-uppercase
+							|Стать координатором
+					p.header_description_wrapper
+						strong
+							Работа из дома, гибкий график, стабильность и рост дохода.
+							br
+							|Хотите присоединиться к Avon?
+				a.btn.btn-avon-transparent.text-uppercase.text-center(href='javascript:;') ХОЧУ
+	div.container-fluid
+		div.row
+			nav.navbar.navbar-avon(role='navigation')
+				div.container-fluid
+					div.navbar-header
+						button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar')
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+					div#navbar.collapse.navbar-collapse
+						// Main menu Snippet Wayfinder
+						// &outerTpl=`mainMenuOuterTpl` &rowTpl=`mainMenuRowTpl`
+						ul.nav.navbar-nav
+							li.active
+								a(href='javascript:;') AVON
+							li
+								a(href='javascript:;') РАБОТА В AVON
+							li
+								a(href='javascript:;') ПРЕДСТАВИТЕЛЯМ
+							li
+								a(href='javascript:;') КОНТАКТЫ
+						// End menu Snippet Wayfinder
+// end header site

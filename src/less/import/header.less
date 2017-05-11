@@ -1,0 +1,121 @@
+.header {
+	.helvetika();
+	&_block {
+		@media(max-width: 991px) {
+			margin-bottom: 20px;
+		}
+	}
+	&_description {
+		max-width: 300px;
+		.center-block();
+		&_wrapper {
+			color: @avon-btn-bg;
+		}
+		&:after {
+			content: " ";
+			display: block;
+			.center-block();
+			width: 12px;
+			height: 12px;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			margin-bottom: 16px;
+			background-image: data-uri("@{bgpath}/bin/plus.svg");
+		}
+	}
+	&_logotip {
+		@media (min-width: 768px) {
+			padding-top: 22px;
+		}
+	}
+	.flex {
+		.helvetika();
+		font-size: 12px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		* {
+			font-weight: 100;
+		}
+	}
+	&_title {
+		line-height: 2.2;
+		&_wrapper {
+			background-color: @avon-btn-bg;
+			color: @avon-btn-color;
+			display: block;
+		}
+	}
+	.navbar {
+		&-avon {
+			background-color: @avon-section-bg;
+			margin-bottom: 0px;
+		}
+		&-collapse {
+			@media (min-width: 768px) {
+				.text-center();
+				line-height: 0;
+				.nav {
+					display: inline-block;
+					float: none;
+					li {
+						line-height: 1.42857143;
+					}
+				}
+			}
+		}
+		&-toggle {
+			&, .icon-bar {
+				.transition(all .5s);
+			}
+			&, &[aria-expanded=false]{
+				&, &:focus {
+					border-color: @avon-btn-bg;
+					.icon-bar {
+						background-color: @avon-btn-bg;
+					}
+				}
+				&:hover {
+					border-color: @avon-btn-bg;
+					background-color: @avon-btn-bg;
+					.icon-bar {
+						background-color: @avon-btn-color;
+					}
+				}
+			}
+			&[aria-expanded=true]{
+				&, &:focus {
+					border-color: @avon-btn-bg;
+					background-color: @avon-btn-bg;
+					.icon-bar {
+						background-color: @avon-btn-color;
+					}
+				}
+			}
+		}
+	}
+	.nav {
+		li {
+			a {
+				min-width: 170px;
+				&, &:focus {
+					.transition(all .5s);
+					color: @avon-btn-bg;
+					background-color: @avon-section-bg;
+				}
+				&:hover {
+					background-color: @avon-btn-bg;
+					color: @avon-btn-color;
+				}
+			}
+			&.active {
+				&, &:hover {
+					a {
+						background-color: @avon-btn-bg;
+						color: @avon-btn-color;
+					}
+				}
+			}
+		}
+	}
+}

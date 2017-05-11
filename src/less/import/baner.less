@@ -1,0 +1,94 @@
+.baner {
+	overflow: hidden;
+	.user-select(none);
+}
+#slider {
+	overflow: hidden;
+	.user-select(none);
+	cursor: default;
+	position: relative;
+	width: 100%;
+	.slick-track {
+		
+	}
+	.item {
+		background-position: 50% 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		.container {
+			height: 100%;
+			position: relative;
+		}
+		&_wrapper {
+			position: relative;
+			padding-top: 7.4%;
+			padding-bottom: 7.4%;
+			flex-direction:column;
+			flex-wrap:nowrap;
+			justify-content:center;
+			align-items:center;
+			align-content:center;
+			display:flex;
+			
+			width: 100%;
+			height: 100%;
+			&_top, &_center, &_bottom, &_btn {
+				.text-center();
+				font-size: 21px;
+				color: #FFFFFF;
+				width: 100%;
+				flex-grow:0;
+				p {
+					margin-bottom: 0px;
+				}
+				.gold {
+					color: #FFE957;
+					font-weight: bold;
+				}
+			}
+			&_btn {
+				&:before {
+					content: " ";
+					.center-block();
+					width: 12px;
+					height: 12px;
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					margin-bottom: 16px;
+					background-image: data-uri("@{bgpath}/bin/plus-gold.svg");
+				}
+			}
+			&_top, &_center {
+				margin-bottom: 20px;
+			}
+			&_top {
+				@media(min-width: 768px){
+					.text-left();
+				}
+			}
+			&_center {
+				@media(min-width: 768px){
+					.text-center();
+				}
+			}
+			&_bottom {
+				@media(min-width: 768px){
+					.text-right();
+				}
+			}
+		}
+		.btn {
+			cursor: pointer;
+		}
+		.love {
+			width: 73px;
+			height: 69px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: contain;
+			background-image: data-uri('@{bgpath}/bin/avon_love.svg');
+		}
+	}
+}

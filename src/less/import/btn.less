@@ -1,0 +1,49 @@
+.btn {
+	&, &:hover, &:focus, &:active {
+		text-decoration: none;
+		border-radius: 0px;
+	}
+	&-avon {
+		&, &-transparent, &-transparent-gold {
+			.transition(all .5s);
+			min-width: 200px;
+			.text-center();
+		}
+		&-transparent {
+			&, &:focus, &:active {
+				background-color: transparent;
+				border: 1px solid @avon-btn-bg;
+				color: @avon-btn-bg;
+			}
+			&:hover {
+				background-color: @avon-btn-bg;
+				border: 1px solid @avon-btn-bg;
+				color: @avon-btn-color;
+			}
+			&-gold {
+				&, &:focus, &:active {
+					background-color: transparent;
+					border: 1px solid #FFE957;
+					color: #FFE957;
+				}
+				&:hover {
+					background-color: #FFE957;
+					border: 1px solid #FFE957;
+					color: @avon-btn-bg;
+				}
+			}
+			&-white {
+				&, &:focus, &:active {
+					background-color: transparent;
+					border: 1px solid #FFFFFF;
+					color: #FFFFFF;
+				}
+				&:hover {
+					background-color: #FFFFFF;
+					border: 1px solid #FFFFFF;
+					color: @avon-btn-bg;
+				}
+			}
+		}
+	}
+}

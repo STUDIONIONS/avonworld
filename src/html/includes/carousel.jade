@@ -1,0 +1,18 @@
+.outer-carousel.clearfix
+	#carousel-actions.carousel.slide(data-ride='carousel')
+		.carousel-inner
+			.item.active
+				img.img-responsive.center-block(src='#{templatedir}/images/priz_001.jpg', alt='Product №1')
+			.item.last
+				img.img-responsive.center-block(src='#{templatedir}/images/priz_002.jpg', alt='Product №2')
+		a.left.carousel-control(href='#carousel-actions', data-slide='prev')
+			span.icon-prev
+		a.right.carousel-control(href='#carousel-actions', data-slide='next')
+			span.icon-next
+	.actions-description
+		.inline-block.gold-percent
+			span.circle 30%
+		.inline-block.percent
+			span.upper СКИДКА
+			br
+			| НА ПЕРВЫЙ ЗАКАЗ

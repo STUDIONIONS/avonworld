@@ -1,0 +1,57 @@
+h {
+	&1, &2, &3, &4, &5, &6 {
+		
+	}
+	&1, &2 {
+		
+	}
+	&3, &4 {
+		
+	}
+	&5, &6 {
+		
+	}
+}
+.gradient-deg(@deg: 45deg; @one: #555; @two: transparent; @three: #555; @pos_one: 25%; @pos_two: 50%; @pos_three: 75%) {
+    background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(@deg, @one @pos_one, @two @pos_two, @three @pos_three);
+    background-image: -o-linear-gradient(@deg, @one @pos_one, @two @pos_two, @three @pos_three);
+    background-image: linear-gradient(@deg, @one @pos_one, @two @pos_two, @three @pos_three);
+}
+.text-center() {
+	text-align: center;
+}
+.text-left() {
+	text-align: left;
+}
+.text-right() {
+	text-align: right;
+}
+.text-justify(){
+	text-align: justify;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+.red {
+	color: red;
+}
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+a, button, input[type=button], input[type=submit], select {
+	&, &:hover, &:focus, &active {
+		outline: none !important;
+	}
+}
+.page {
+	overflow: hidden;
+}

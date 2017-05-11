@@ -1,8 +1,8 @@
 module.exports = function(grunt){
 	var gc = {
-		imageNotyfy: __dirname+'\\notify.png',
+		imageNotyfy: __dirname+'\\src\\notify.png',
 		minifyHtml: false,
-		minifyCss: true
+		minifyCss: false
 	};
 	require('load-grunt-tasks')(grunt);
 	require('time-grunt')(grunt);
@@ -23,7 +23,7 @@ module.exports = function(grunt){
 			},
 			book: {
 				files : {
-					'test/css/bookstyle.css' : [
+					'test/css/book.css' : [
 						'src/less/bookstyle.less'
 					]
 				},
@@ -31,6 +31,13 @@ module.exports = function(grunt){
 					compress: gc.minifyCss,
 					ieCompat: false
 				}
+			},
+			preloader: {
+				files : {
+					'test/css/preloader.css' : [
+						'src/less/preloadpage.less'
+					]
+				},
 			}
 		},
 		autoprefixer:{
@@ -44,15 +51,53 @@ module.exports = function(grunt){
 				src: [
 					'test/css/main.css'
 				],
-				dest: 'assets/templates/ioweb/css/'
+				dest: 'assets/templates/projectsoft/css/'
 			},
 			book: {
 				expand: true,
 				flatten: true,
 				src: [
-					'test/css/bookstyle.css'
+					'test/css/book.css'
 				],
-				dest: 'assets/templates/ioweb/css/'
+				dest: 'assets/templates/projectsoft/css/'
+			},
+			preloader: {
+				expand: true,
+				flatten: true,
+				src: [
+					'test/css/preloader.css'
+				],
+				dest: 'assets/templates/projectsoft/css/'
+			}
+		},
+		requirejs: {
+			ui: {
+				options: {
+					baseUrl: __dirname+"/bower_components/jquery-ui/ui/widgets/",//"./",
+					paths: {
+						jquery: __dirname+'/bower_components/jquery/dist/jquery'
+					},
+					preserveLicenseComments: false,
+					optimize: "none",
+					findNestedDependencies: true,
+					skipModuleInsertion: true,
+					exclude: [ "jquery" ],
+					include: [ 
+								"../disable-selection.js",
+								"slider.js",
+							],
+					out: "test/js/jquery.slider.js",
+					done: function(done, output) {
+						grunt.log.writeln(output.magenta);
+						grunt.log.writeln("jQueryUI Custom Build ".cyan + "done!\n");
+						grunt.log.writeln("File " + (__dirname +"/test/js/jquery.slider.js").cyan + " created.\n");
+						done();
+					},
+					error: function(done, err) {
+						grunt.log.warn(err);
+						done();
+					}
+				}
 			}
 		},
 		uglify : {
@@ -62,25 +107,12 @@ module.exports = function(grunt){
 			},
 			app: {
 				files: {
-					'assets/templates/ioweb/js/' : [
+					'assets/templates/projectsoft/js/app.js' : [
+						'src/js/utilites.js',
 						'bower_components/jquery/dist/jquery.js',
-						'bower_components/jquery-ui/jquery-ui.js',
+						'test/js/jquery.slider.js',
 						'bower_components/jquery-mousewheel/jquery.mousewheel.js',
 						'bower_components/jqueryui-touch-punch/jquery.ui.touch-punch.js',
-					]
-				}
-			},
-			hypher: {
-				files: {
-					'assets/templates/ioweb/js/' : [
-						'bower_components/hyphernationRUru/dist/jquery.hypher.js',
-						'bower_components/hyphernationRUru/dist/ru-ru.js',
-					]
-				}
-			},
-			plugins: {
-				files: {
-					'assets/templates/ioweb/js/plugins.js' : [
 						'bower_components/jquery_lazyload/jquery.lazyload.js',
 						'bower_components/jquery.maskedinput/dist/jquery.maskedinput.js',
 						'bower_components/fancybox/dist/jquery.fancybox.js',
@@ -91,9 +123,17 @@ module.exports = function(grunt){
 					]
 				}
 			},
+			hypher: {
+				files: {
+					'assets/templates/projectsoft/js/hypher.js' : [
+						'bower_components/hyphernationRUru/dist/jquery.hypher.js',
+						'bower_components/hyphernationRUru/dist/ru-ru.js',
+					]
+				}
+			},
 			book : {
 				files: {
-					'assets/templates/ioweb/js/main.js': [
+					'assets/templates/projectsoft/js/book.js': [
 						'src/js/turn.js',
 						'src/js/book.js'
 					]
@@ -101,7 +141,7 @@ module.exports = function(grunt){
 			},
 			main: {
 				files: {
-					'assets/templates/ioweb/js/main.js': [
+					'assets/templates/projectsoft/js/main.js': [
 						'bower_components/bootstrap/dist/js/bootstrap.js',
 						'src/js/main.js'
 					]
@@ -127,7 +167,7 @@ module.exports = function(grunt){
 						src: [
 							'src/images/*.{png,jpg,gif,svg}'
 						],
-						dest: 'assets/templates/ioweb/images/',
+						dest: 'assets/templates/projectsoft/images/',
 						filter: 'isFile'
 					}
 				]
@@ -159,19 +199,25 @@ module.exports = function(grunt){
 				expand: true,
 				cwd: 'src/fonts',
 				src: '**',
-				dest: 'assets/templates/ioweb/fonts/',
+				dest: 'assets/templates/projectsoft/fonts/',
 			},
 			bootstrap: {
 				expand: true,
 				cwd: 'bower_components/bootstrap/dist/fonts',
 				src: '**',
-				dest: 'assets/templates/ioweb/fonts/',
+				dest: 'assets/templates/projectsoft/fonts/',
 			},
 			slick: {
 				expand: true,
 				cwd: 'bower_components/slick-carousel/slick/fonts',
 				src: '**',
-				dest: 'assets/templates/ioweb/fonts/',
+				dest: 'assets/templates/projectsoft/fonts/',
+			},
+			tpl: {
+				expand: true,
+				cwd: 'src/html/chunk',
+				src: '**',
+				dest: 'install/assets/chunks/',
 			}
 		},
 		jade: {
@@ -218,12 +264,12 @@ module.exports = function(grunt){
 							"/** \n"+
 							" * <%= filename %>\n"+
 							" * \n"+
-							" * <%= template %> Templates AVON BUSINES\n"+
+							" * <%= template %> Templates AVON WORLD\n"+
 							" * \n"+
 							" * @category	chunk\n"+
 							" * @version		1.0\n"+
 							" * @license		http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)\n"+
-							" * @internal	@modx_category Templates AVON BUSINES\n"+
+							" * @internal	@modx_category Templates AVON WORLD\n"+
 							" * @internal	@installset base\n"+
 							" * @internal	@overwrite false\n"+
 							" */\n",
@@ -248,27 +294,28 @@ module.exports = function(grunt){
 			html: {
 				files: [
 					'src/html/**/*.jade',
+					'src/html/**/*.tpl',
 				],
-				tasks: ["jade","usebanner","notify:done"]
+				tasks: ["jade","copy:tpl","usebanner","notify:done"]
 			},
 			js: {
 				files: [
 					'src/js/**/*.js'
 				],
-				tasks: ['notify:watch', 'uglify:main', 'uglify:plugins', 'uglify:book','notify:done']
+				tasks: ['notify:watch', 'requirejs', 'uglify:main', 'uglify:book',"jade","copy:tpl","usebanner",'notify:done']
 			},
 			css: {
 				files: [
 					'src/less/**/*.{css,less}',
 				],
-				tasks: ['notify:watch', 'less', 'autoprefixer','notify:done']//
+				tasks: ['notify:watch', 'less', 'autoprefixer',"jade","copy:tpl","usebanner",'notify:done']//
 			},
 			images: {
 				files: [
 					'src/images/*.{png,jpg,gif,svg}',
 					'src/images/css/*.{png,jpg,gif,svg}'
 				],
-				tasks: ['notify:watch', 'newer:imagemin', 'less', 'autoprefixer','notify:done']//
+				tasks: ['notify:watch', 'newer:imagemin', 'less', 'autoprefixer', 'notify:done']//
 			}
 		},
 		notify: {
@@ -288,6 +335,6 @@ module.exports = function(grunt){
 			}
 		}
 	});
-	grunt.registerTask('default', 	['notify:watch', 'imagemin', 'less', 'autoprefixer', 'copy', 'uglify', 'jade', 'notify:done']);
+	grunt.registerTask('default', 	['notify:watch', 'imagemin', 'less', 'autoprefixer', 'requirejs', 'uglify', 'jade', 'copy', 'usebanner', 'notify:done']);
 	grunt.registerTask('dev', 		['watch']);
 }

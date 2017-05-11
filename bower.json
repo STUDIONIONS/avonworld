@@ -26,6 +26,7 @@
     "jquery_lazyload": "jquery.lazyload#^1.9.7",
     "jquery-ui": "https://github.com/components/jqueryui.git#1.12.1",
     "arcticModal": "https://github.com/vjik/arcticModal.git",
-    "jqueryui-touch-punch": "https://github.com/furf/jquery-ui-touch-punch.git"
+    "jqueryui-touch-punch": "https://github.com/furf/jquery-ui-touch-punch.git",
+    "yepnope": "1.5.0"
   }
 }

@@ -1,0 +1,107 @@
+.leads {
+	.homeleading {
+		.agent {
+			&-step {
+				list-style: none;
+				margin-top: 40px;
+				margin-bottom: 40px;
+				padding-left: 0px;
+				counter-reset: step;
+				.helvetika();
+				&-title {
+					font-size: 21px;
+				}
+				> li {
+					color: #FFFFFF;
+					margin-bottom: 22px;
+					&:before {
+						counter-increment: step;
+						content: counter(step);
+						display: block;
+						float: left;
+						font-size: 50px;
+						line-height: 90px;
+						width: 90px;
+						height: 90px;
+						border-radius: 50%;
+						overflow: hidden;
+						background-color: #ffffff;
+						color: #ED028C;
+						.text-center();
+					}
+					&:after {
+						content: " ";
+						display: table;
+						height: 0px;
+						clear: both;
+					}
+					> p {
+						margin-left: 128px;
+					}
+				}
+			}
+			&-button {
+				&:before {
+					content: " ";
+					.center-block();
+					width: 12px;
+					height: 12px;
+					background-position: 50% 50%;
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					background-image: data-uri("@{bgpath}/bin/plus-white.svg");
+					margin-bottom: 50px;
+				}
+			}
+		}
+		&_menu {
+			list-style: none;
+			padding-left: 0px;
+		}
+	}
+	&_title {
+		padding-bottom: 15px;
+		img {
+			position: relative;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 100%;
+		}
+	}
+	&_table {
+		position: relative;
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		@media(min-width: 1200px){
+			display: table;
+			vertical-align: top;
+			min-height: 400px;
+		}
+		&_cell {
+			width: 100%;
+			position: relative;
+			@media(min-width: 1200px){
+				display: table-cell;
+				vertical-align: top;
+				width: 50%;
+			}
+			&.left, &.right {
+				padding-bottom: 15px;
+				padding-left: 15px;
+				padding-top: 15px;
+				padding-right: 15px;
+			}
+			&.left {
+				background-color: #ffffff;
+			}
+			&.right {
+				background-position: center top;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-image: url('@{bgpath}/leads_right.jpg');
+			}
+		}
+	}
+}
