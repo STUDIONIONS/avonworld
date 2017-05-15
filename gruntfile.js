@@ -231,6 +231,9 @@ module.exports = function(grunt){
 				files: {
 					"index.html": [
 						"src/html/index.jade"
+					],
+					"work.html": [
+						"src/html/work.jade"
 					]
 				}
 			},

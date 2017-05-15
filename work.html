@@ -336,35 +336,22 @@
         </div>
       </div>
       <!-- end header site-->
-      <div class="main">
-        <div class="baner row">
-          <div id="slider">
-            <div style="background-image: url('assets/templates/projectsoft/images/baner_0001.jpg');" class="item">
-              <div class="container">
-                <div class="item_wrapper">
-                  <div class="item_wrapper_top">
-                    <p class="text-uppercase"><span class="gold">AVON - ЭТО КОМПАНИЯ,</span><br>КОТОРАЯ НЕ ТОЛЬКО ПРИНОСИТ КРАСОТУ В ДОМА ЛЮДЕЙ,<br>НО И ОТКРЫВАЕТ ПЕРЕД НИМИ НОВЫЕ ГОРИЗОНТЫ.</p>
-                  </div>
-                  <div class="item_wrapper_center">
-                    <p class="text-uppercase love center-block"></p>
-                  </div>
-                  <div class="item_wrapper_bottom">
-                    <p class="text-uppercase"><span class="gold">AVON - ЭТО ВОЗМОЖНОСТЬ,</span><br>НАЧАТЬ СВОЕ ДЕЛО В ДРУЖНОЙ КОМАНДЕ!</p>
-                  </div>
-                  <div class="item_wrapper_btn"><a href="javascript:;" class="btn btn-avon-transparent-gold">ОЗНАКОМИТЬСЯ</a></div>
+      <div class="workavon row">
+        <div style="background-image: url('assets/templates/projectsoft/images/world_avon.jpg');" class="jarallax workavon_bg">
+          <div class="container">
+            <h1 class="text-center text-uppercase">РАБОТА В AVON</h1>
+            <div class="row">
+              <div class="col-md-6 left">
+                <h3 class="title">Получи скидку 30%<span>и приз на выбор.</span></h3>
+                <div class="description">
+                  <p>Стань представителем Avon в период действия каталога 1/ 2017 года. Размести свой первый заказ на сумму 1600 руб. и более и оплати его. Выбери приз всего за 5 руб. со своим первым заказом по следующему каталогу</p>
+                  <ol class="gold-list">
+                    <li>Стань представителем компании AVON в период действия 1 каталога 2017, получи 30% скидки на свой первый заказ на сумму от 1600 р и бесплатную доставку.</li>
+                    <li>Получи свой приз всего за 5 рублей со своим следующим заказом в каталоге 2/2017</li>
+                  </ol>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="leads">
-        <div class="row">
-          <div style="background-image: url('assets/templates/projectsoft/images/jarallax.jpg');" class="jarallax homeleading">
-            <div class="container">
-              <div class="row">
-                <div class="leads_table">
-                  <div class="leads_table_cell left">
+                <div class="workcarousel">
+                  <div class="workcarousel-wrapper">
                     <div class="leads_title"><img src="assets/templates/projectsoft/images/actions.svg" alt="ПОРАДУЙ СЕБЯ! ПРИЗ НА ВЫБОР!" class="img-responsive center-block"></div>
                     <div class="outer-carousel clearfix">
                       <div id="carousel-actions" data-ride="carousel" class="carousel slide">
@@ -379,41 +366,332 @@
                       </div>
                     </div>
                   </div>
-                  <div class="leads_table_cell right">
-                    <div class="leads_title"><img src="assets/templates/projectsoft/images/agent_title.svg" alt="СТАНЬ ПРЕДСТАВИТЕЛЕМ AVON!" class="img-responsive center-block"></div>
-                    <div class="agent">
-                      <ul class="agent-step">
-                        <li>
-                          <p class="agent-step-title text-uppercase">ПРОЙДИТЕ РЕГИСТРАЦИЮ</p>
-                          <p>И станьте представителем Avon в период с 17 октября 2016 года по 6 ноября 2016 года (в компании 15/2016).</p>
-                        </li>
-                        <li>
-                          <p class="agent-step-title text-uppercase">РАЗМЕСТИТЕ</p>
-                          <p>свой первый заказ в этот же период на сумму 1600 руб. и более (по ценам каталога 15/2016) и оплати его.</p>
-                        </li>
-                        <li>
-                          <p class="agent-step-title text-uppercase">ВЫБЕРИ И ЗАКАЖИ</p>
-                          <p>приз всего за 5 руб. со своим первым заказом по каталогу компании 16/2016 или 17/2016.</p>
-                        </li>
-                      </ul>
-                      <div class="agent-button text-center"><a href="javascript:;" class="text-center text-uppercase btn btn-avon-transparent-white">ЗАРЕГИСТРИРОВАТЬСЯ</a></div>
+                </div>
+              </div>
+              <div class="col-md-6 right">
+                <div id="workform" class="block-form clearfix">
+                  <div class="form-wrapper container-fluid">
+                    <h3 class="title text-center">Заполни анкету <span>получи приз с первым заказом</span></h3>
+                    <div class="clearfix form-wrapper-block">
+                      <div class="validateForm"></div>
+                      <form id="AVON_zayavka" action="work-avon.html" method="post" role="form">
+                        <input type="hidden" name="form" value="zayavka">
+                        <input name="user" type="text" style="display:none;" value="" class="special">
+                        <div class="form-group clearfix has-feedback">
+                          <label for="fio">Фамилия, Имя, Отчество</label>
+                          <input id="fio" type="text" name="fio" placeholder="Полные данные как в паспорте" value="" class="form-control"><span class="glyphicon form-control-feedback"></span>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6 col-xs-12">
+                            <div class="form-group clearfix has-feedback">
+                              <label for="years">Возраст</label>
+                              <select id="years" type="text" name="years" class="form-control">
+                                <option disabled="disabled" value="" selected="selected">Укажите возраст</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40 и более</option>
+                              </select><span class="glyphicon form-control-feedback"></span>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-xs-12">
+                            <div class="form-group clearfix">
+                              <label for="sex">Пол</label>
+                              <select id="sex" name="sex" class="form-control">
+                                <option value="Мужчина">Мужчина</option>
+                                <option value="Женщина">Женщина</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group clearfix has-feedback">
+                          <label for="email">Email</label>
+                          <input id="email" type="email" name="email" placeholder="Электронная почта" value="" class="form-control"><span class="glyphicon form-control-feedback"></span>
+                        </div>
+                        <div class="form-group clearfix has-feedback">
+                          <label for="tel">Телефон</label>
+                          <input id="tel" type="tel" name="tel" placeholder="Телефон" value="" class="form-control"><span class="glyphicon form-control-feedback"></span>
+                        </div>
+                        <div class="form-group clearfix has-feedback">
+                          <label for="region">Регион</label>
+                          <select id="region" name="region" class="form-control">
+                            <option disabled="disabled" value="" selected="selected">Выборать Регион проживания</option>
+                            <option value="Адыгея">Адыгея</option>
+                            <option value="Алтай">Алтай</option>
+                            <option value="Алтайский край">Алтайский край</option>
+                            <option value="Амурская область">Амурская область</option>
+                            <option value="Архангельская область">Архангельская область</option>
+                            <option value="Астраханская область">Астраханская область</option>
+                            <option value="Башкортостан">Башкортостан</option>
+                            <option value="Белгородская область">Белгородская область</option>
+                            <option value="Брянская область">Брянская область</option>
+                            <option value="Бурятия">Бурятия</option>
+                            <option value="Владимирская область">Владимирская область</option>
+                            <option value="Волгоградская область">Волгоградская область</option>
+                            <option value="Вологодская область">Вологодская область</option>
+                            <option value="Воронежская область">Воронежская область</option>
+                            <option value="Дагестан">Дагестан</option>
+                            <option value="Еврейская АОбл">Еврейская АОбл</option>
+                            <option value="Забайкальский край">Забайкальский край</option>
+                            <option value="Ивановская область">Ивановская область</option>
+                            <option value="Ингушетия">Ингушетия</option>
+                            <option value="Иркутская область">Иркутская область</option>
+                            <option value="Кабардино-Балкарская">Кабардино-Балкарская</option>
+                            <option value="Калининградская область">Калининградская область</option>
+                            <option value="Калмыкия">Калмыкия</option>
+                            <option value="Калужская область">Калужская область</option>
+                            <option value="Камчатский край">Камчатский край</option>
+                            <option value="Карачаево-Черкесская">Карачаево-Черкесская</option>
+                            <option value="Карелия">Карелия</option>
+                            <option value="Кемеровская область">Кемеровская область</option>
+                            <option value="Кировская область">Кировская область</option>
+                            <option value="Коми">Коми</option>
+                            <option value="Корякский АО">Корякский АО</option>
+                            <option value="Костромская область">Костромская область</option>
+                            <option value="Краснодарский край">Краснодарский край</option>
+                            <option value="Красноярский край">Красноярский край</option>
+                            <option value="Курганская область">Курганская область</option>
+                            <option value="Курская область">Курская область</option>
+                            <option value="Ленинградская область">Ленинградская область</option>
+                            <option value="Липецкая область">Липецкая область</option>
+                            <option value="Магаданская область">Магаданская область</option>
+                            <option value="Марий Эл">Марий Эл</option>
+                            <option value="Мордовия">Мордовия</option>
+                            <option value="Московская область">Московская область</option>
+                            <option value="Мурманская область">Мурманская область</option>
+                            <option value="Ненецкий АО">Ненецкий АО</option>
+                            <option value="Нижегородская область">Нижегородская область</option>
+                            <option value="Новгородская область">Новгородская область</option>
+                            <option value="Новосибирская область">Новосибирская область</option>
+                            <option value="Омская область">Омская область</option>
+                            <option value="Оренбургская область">Оренбургская область</option>
+                            <option value="Орловская область">Орловская область</option>
+                            <option value="Пензенская область">Пензенская область</option>
+                            <option value="Пермский край">Пермский край</option>
+                            <option value="Приморский край">Приморский край</option>
+                            <option value="Псковская область">Псковская область</option>
+                            <option value="Ростовская область">Ростовская область</option>
+                            <option value="Рязанская область">Рязанская область</option>
+                            <option value="Самарская область">Самарская область</option>
+                            <option value="Саратовская область">Саратовская область</option>
+                            <option value="Саха /Якутия/">Саха /Якутия/</option>
+                            <option value="Сахалинская область">Сахалинская область</option>
+                            <option value="Свердловская область">Свердловская область</option>
+                            <option value="Северная Осетия - Алания">Северная Осетия - Алания</option>
+                            <option value="Смоленская область">Смоленская область</option>
+                            <option value="Ставропольский край">Ставропольский край</option>
+                            <option value="Таймырский (Долгано-Ненецкий) АО">Таймырский (Долгано-Ненецкий) АО</option>
+                            <option value="Тамбовская область">Тамбовская область</option>
+                            <option value="Татарстан">Татарстан</option>
+                            <option value="Тверская область">Тверская область</option>
+                            <option value="Томская область">Томская область</option>
+                            <option value="Тульская область">Тульская область</option>
+                            <option value="Тыва">Тыва</option>
+                            <option value="Тюменская область">Тюменская область</option>
+                            <option value="Удмуртская">Удмуртская</option>
+                            <option value="Ульяновская область">Ульяновская область</option>
+                            <option value="Хабаровский край">Хабаровский край</option>
+                            <option value="Хакасия">Хакасия</option>
+                            <option value="Ханты-Мансийский Автономный округ - Югра АО">Ханты-Мансийский Автономный округ - Югра АО</option>
+                            <option value="Челябинская область">Челябинская область</option>
+                            <option value="Чеченская">Чеченская</option>
+                            <option value="Чувашская">Чувашская</option>
+                            <option value="Чукотский АО">Чукотский АО</option>
+                            <option value="Ямало-Ненецкий АО">Ямало-Ненецкий АО</option>
+                            <option value="Ярославская область">Ярославская область</option>
+                          </select>
+                        </div>
+                        <div class="form-group clearfix has-feedback">
+                          <label for="addres">Адрес</label>
+                          <input id="addres" type="text" name="addres" placeholder="Улица, дом, квартира" value="" class="form-control"><span class="glyphicon form-control-feedback"></span>
+                        </div>
+                        <div class="text-center form-divider clearfix">
+                          <button type="submit" class="btn btn-avon-transparent-white text-uppercase text-center">Стать представителем</button>
+                        </div><span>Я подтверждаю согласие на обработку моих персональных данных</span>
+                        <input type="hidden" name="formid" value="AVON_zayavka">
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="getby_avon container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3 class="getby_avon__title text-center">Почему именно AVON?</h3>
+            <div class="getby_avon__divider clerafix"></div>
+          </div>
+          <div class="clerafix"></div>
+          <div class="col-sm-4">
+            <div class="getby_avon__table"><span class="getby_avon_icon icn-avon-00"></span>
+              <p><span class="title">Легкий старт </span>Регистрируйся бесплатно и получи стартовый набор пробных образцов нашей продукции.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="getby_avon__table"><span class="getby_avon_icon icn-avon-01"></span>
+              <p><span class="title">Гибкий график </span>Планируй свой день так, как тебе удобно и уделяй больше времени семье и детям.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="getby_avon__table"><span class="getby_avon_icon icn-avon-02"></span>
+              <p><span class="title">Современный подход </span>AVON дает возможность бесплатно открыть свой собственный магазин в Интернете и пройти онлайн-тренинги</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="getby_avon__table"><span class="getby_avon_icon icn-avon-03"></span>
+              <p><span class="title">Новинки каждые 3 недели </span>Новый каталог выходит каждые 3 недели и ассортимент предлагемой компанией косметики постоянно меняется</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="getby_avon__table"><span class="getby_avon_icon icn-avon-04"></span>
+              <p><span class="title">Призы и привелегии </span>Получи скидку 31% на всю продукцию AVON, а также подарок со своим первым заказом</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="getby_avon__table"><span class="getby_avon_icon icn-avon-05"></span>
+              <p><span class="title">Стабильность и рост дохода </span>Сделай следующий шаг: стань Координатором и полчи бонус 125 000 рублей</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work_full row avonbg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 description__title">
+              <h3 class="hypher">Осуществи мечту</h3>
+            </div>
+            <div class="col-md-6 img-wrapper"><img src="assets/templates/projectsoft/images/avon_mechti.jpg" alt="Осуществи свои мечты" class="center-block img-responsive"></div>
+            <div class="col-md-6 description hypher">
+              <p>AVON дает возможность больше времени уделять личной жизни вместо того, чтобы полностью посвящать себя работе.</p>
+              <p>AVON помогает найти гармонию между личной жизнью и бизнесом. Планируй свой день так, как тебе удобно. Не нужно отпрашиваться с работы, чтобы куда-то пойти, ты можешь заниматься своими делами, когда и где тебе удобно. Это очень здорово! Попробуй!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work_full row avonbg_white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 description__title">
+              <h3 class="hypher">Призы и привилегии</h3>
+            </div>
+            <div class="col-md-6 img-wrapper"><img src="assets/templates/projectsoft/images/avon_prizi.jpg" alt="Призы и привилегии" class="center-block img-responsive"></div>
+            <div class="col-md-6 description hypher">
+              <p>Размещая заказы клиентов по каждому нашему каталогу, ты получаеешь призы в любимой программе «AVON Клуб»</p>
+              <p>Тебя ждут приятные сюрпризы от AVON и компаний-партнеров, привилегии на каждом уровне Программы и множество других преимуществ. Используй возможности и наслаждайся успехом!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work_full row avonbg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 description__title">
+              <h3 class="hypher">Карьерный рост</h3>
+            </div>
+            <div class="col-md-6 img-wrapper"><img src="assets/templates/projectsoft/images/avon_carera.jpg" alt="Карьерный рост" class="center-block img-responsive"></div>
+            <div class="col-md-6 description hypher">
+              <p>Возможности AVON открыты для каждого. Сделай следующий шаг и стань Координатором!</p>
+              <p>Координаторы принимают участие в наших Конференциях в Москве, где они первыми узнают последние новости в мире AVON, наслаждаются выступлениями звезд мирового масштаба и получают заслуженные награды на сцене от руководства Компании!</p>
+              <p>Лучшие из Лучших, победители программы «Звездный Клуб», получают современный автомобиль в подарок от AVON за выдающийся вклад в развитие бизнеса.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work row background_work">
+        <div class="container-fluid background_work_color">
+          <div class="row">
             <div class="container">
-              <div class="row">
-                <ul class="homeleading_menu">
-                  <li class="item col-lg-2 col-md-2 col-sm-4 col-xs-6 bg_01"><span class="row bg"><a href="javascript:;"><span class="text-uppercase text-center table-block"><span class="table-block-cell"><span>АКЦИИ И СКИДКИ</span></span></span></a></span></li>
-                  <li class="item col-lg-2 col-md-2 col-sm-4 col-xs-6 bg_02"><span class="row bg"><a href="javascript:;"><span class="text-uppercase text-center table-block"><span class="table-block-cell"><span>ШКАЛА СКИДОК</span></span></span></a></span></li>
-                  <li class="item col-lg-2 col-md-2 col-sm-4 col-xs-6 bg_03"><span class="row bg"><a href="javascript:;"><span class="text-uppercase text-center table-block"><span class="table-block-cell"><span>ПУНКТЫ ВЫДАЧИ</span></span></span></a></span></li>
-                  <li class="item col-lg-2 col-md-2 col-sm-4 col-xs-6 bg_04"><span class="row bg"><a href="javascript:;"><span class="text-uppercase text-center table-block"><span class="table-block-cell"><span>СРОЧНАЯ ДОСТАВКА</span></span></span></a></span></li>
-                  <li class="item col-lg-2 col-md-2 col-sm-4 col-xs-6 bg_05"><span class="row bg"><a href="javascript:;"><span class="text-uppercase text-center table-block"><span class="table-block-cell"><span>ДОГОВОР КОМПАНИИ</span></span></span></a></span></li>
-                  <li class="item col-lg-2 col-md-2 col-sm-4 col-xs-6 bg_06"><span class="row bg"><a href="javascript:;"><span class="text-uppercase text-center table-block"><span class="table-block-cell"><span class="hypher">ПРЕДСТАВИТЕЛЯМ</span></span></span></a></span></li>
-                </ul>
+              <h2 class="text-center text-uppercase">AVON СЕГОДНЯ...</h2>
+              <div class="work_description">
+                <p>одна из самых успешных косметических компаний в мире в области прямых продаж с оборотом $9 млрд., с более чем 6 миллионами Представителей в 100 странах мира, множеством наград в области парфюмерии и косметики и более чем 125-летней историей.</p>
+              </div>
+              <div class="buttonblock text-center"><a href="javascript:;" class="btn btn-avon-transparent text-uppercase">Присоедениться</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work_full_comments row">
+        <div class="container avoncurrentday">
+          <h3 class="avoncurrentday_title text-center">Непридуманные истории представителей AVON</h3>
+          <div class="avoncurrentday_description">
+            <p>С каждым новым каталогом около 40 000 человек становятся новыми Представителями AVON. В данный момент во всем мире более 6 миллионов Представителей</p>
+          </div>
+          <div class="vertical-divider"></div>
+          <div class="outer-carousel clearfix">
+            <div id="carousel-reviews" data-ride="carousel" class="carousel slide clearfix">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-reviews" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-reviews" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <p>Очень благодарна своему координатору, Атамановой Людмиле Геннадьевне!</p>
+                  <p>Прекрасный, добрый и отзывчивый человечек! Терпелива, трудолюбива, всегда идет на встречу!<br>Людей с таким добрым нравом редко встретишь!</p>
+                  <p>Очень ценим и благодарим за все!!!</p>
+                  <div class="user-data">
+                    <div class="col-sm-6"><img src="assets/templates/projectsoft/images/vera.jpg" alt="Avatar Вера" class="avatar center-block img-responsive img-circle"></div>
+                    <div class="col-sm-6 text-center">
+                      <div class="user-data-wrapper text-left">
+                        <p class="user-year"> </p>
+                        <p class="user-name">Вера</p>
+                        <p class="user-cite"> </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <p>Я очень благодарна своему координатору, Атамановой Людмиле Геннадьевне </p>
+                  <p>Она добрая и всегда готова помочь</p>
+                  <p>Спасибо ей за всё</p>
+                  <div class="user-data">
+                    <div class="col-sm-6"><img src="assets/templates/projectsoft/images/kizi.jpg" alt="Avatar Таалайбек кызы Алина" class="avatar center-block img-responsive img-circle"></div>
+                    <div class="col-sm-6 text-center">
+                      <div class="user-data-wrapper text-left">
+                        <p class="user-year"> </p>
+                        <p class="user-name">Таалайбек кызы Алина</p>
+                        <p class="user-cite"> </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="vertical-divider"></div>
+          <div class="buttonblock text-center">
+            <button class="btn btn-avon-transparent text-uppercase text-center post-otziv">Оставить свой отзыв</button>
+          </div>
+        </div>
+      </div>
+      <div class="work_full_avonbg row">
+        <div class="container">
+          <h3 class="description__title text-center text-uppercase">AVON В РОССИИ...</h3>
+          <div class="description_wrapper center-block">
+            <p>Уже давно стал именем нарицательным. Спросите любую женщину в России, знает ли она AVON, и почти наверняка получите утвердительный ответ. Узнаваемость марки стабильно держится на рекордно высоком уровне 98%-99%. Такой популярностью у российских женщин не может похвастаться ни один другой косметический бренд. Каждая пятая семья в России пользуется как минимум одним продуктом от AVON. Компания была одним из первых иностранных производителей косметической продукции, которая пришла на российский рынок в 90-е годы и сразу же завоевала любовь русских красавиц. Сегодня, почти 20 лет спустя, продукция AVON остается одной из самых востребованных. По итогам 2014 года, AVON признан косметической компанией прямых продаж №1 в России. Является членом Ассоциации Прямых Продаж.</p>
           </div>
         </div>
       </div>

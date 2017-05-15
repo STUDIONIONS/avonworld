@@ -1,0 +1,46 @@
+.work_full {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.col-md-6 {
+		@media(max-width: 991px){
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.description {
+		font-size: 19px;
+		p {
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+		&__title {
+			h2, h3, h4 {
+				font-size: 35px;
+				margin-top: 10px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.img-wrapper {
+		@media(max-width: 991px){
+			margin-bottom: 15px;
+		}
+	}
+	&.avonbg {
+		background-color: @avon-btn-bg;
+		color: white;
+		font-size: 16px;
+		.description {
+			&, &__title {
+				float: right;
+			}
+		}
+		&_white {
+			background-color: white;
+			.img-wrapper {
+				float: right;
+			}
+		}
+	}
+}

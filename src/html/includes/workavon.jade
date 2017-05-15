@@ -1,0 +1,26 @@
+.workavon.row
+	.jarallax.workavon_bg(style="background-image: url('#{templatedir}/images/world_avon.jpg');")
+		.container
+			h1.text-center.text-uppercase РАБОТА В AVON
+			.row
+				.col-md-6.left
+					h3.title Получи скидку 30%
+						span и приз на выбор.
+					.description
+						p Стань представителем Avon в период действия каталога 1/ 2017 года. Размести свой первый заказ на сумму 1600 руб. и более и оплати его. Выбери приз всего за 5 руб. со своим первым заказом по следующему каталогу
+						ol.gold-list
+							li Стань представителем компании AVON в период действия 1 каталога 2017, получи 30% скидки на свой первый заказ на сумму от 1600 р и бесплатную доставку.
+							li Получи свой приз всего за 5 рублей со своим следующим заказом в каталоге 2/2017
+					.workcarousel
+						.workcarousel-wrapper
+							div.leads_title
+								img.img-responsive.center-block(src="#{templatedir}/images/actions.svg" alt="ПОРАДУЙ СЕБЯ! ПРИЗ НА ВЫБОР!")
+							include carousel
+				.col-md-6.right
+					#workform.block-form.clearfix
+						.form-wrapper.container-fluid
+							h3.title.text-center
+								|Заполни анкету 
+								span получи приз с первым заказом
+							include form-zayavka
+							

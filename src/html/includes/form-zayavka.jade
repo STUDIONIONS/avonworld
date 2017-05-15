@@ -1,0 +1,129 @@
+.clearfix.form-wrapper-block
+	.validateForm
+	form#AVON_zayavka(action='work-avon.html', method='post', role='form')
+		input(type='hidden', name='form', value='zayavka')
+		input.special(name='user', type='text', style='display:none;', value='')
+		.form-group.clearfix.has-feedback
+			label(for='fio') Фамилия, Имя, Отчество
+			input#fio.form-control(type='text', name='fio', placeholder='Полные данные как в паспорте', value='')
+			span.glyphicon.form-control-feedback
+		.row
+			.col-sm-6.col-xs-12
+				.form-group.clearfix.has-feedback
+					label(for='years') Возраст
+					select#years.form-control(type='text', name='years')
+						option(disabled='disabled', value='', selected='selected') Укажите возраст
+						- for (var i=16; i<=39; ++i) {
+						option(value="#{i}") #{i}
+						- }
+						option(value="40") 40 и более
+					span.glyphicon.form-control-feedback
+			.col-sm-6.col-xs-12
+				.form-group.clearfix
+					label(for='sex') Пол
+					select#sex.form-control(name='sex')
+						option(value='Мужчина') Мужчина
+						option(value='Женщина') Женщина
+		.form-group.clearfix.has-feedback
+			label(for='email') Email
+			input#email.form-control(type='email', name='email', placeholder='Электронная почта', value='')
+			span.glyphicon.form-control-feedback
+		.form-group.clearfix.has-feedback
+			label(for='tel') Телефон
+			input#tel.form-control(type='tel', name='tel', placeholder='Телефон', value='')
+			span.glyphicon.form-control-feedback
+		.form-group.clearfix.has-feedback
+			label(for='region') Регион
+			select#region.form-control(name='region')
+				option(disabled='disabled', value='', selected='selected') Выборать Регион проживания
+				option(value='Адыгея') Адыгея
+				option(value='Алтай') Алтай
+				option(value='Алтайский край') Алтайский край
+				option(value='Амурская область') Амурская область
+				option(value='Архангельская область') Архангельская область
+				option(value='Астраханская область') Астраханская область
+				option(value='Башкортостан') Башкортостан
+				option(value='Белгородская область') Белгородская область
+				option(value='Брянская область') Брянская область
+				option(value='Бурятия') Бурятия
+				option(value='Владимирская область') Владимирская область
+				option(value='Волгоградская область') Волгоградская область
+				option(value='Вологодская область') Вологодская область
+				option(value='Воронежская область') Воронежская область
+				option(value='Дагестан') Дагестан
+				option(value='Еврейская АОбл') Еврейская АОбл
+				option(value='Забайкальский край') Забайкальский край
+				option(value='Ивановская область') Ивановская область
+				option(value='Ингушетия') Ингушетия
+				option(value='Иркутская область') Иркутская область
+				option(value='Кабардино-Балкарская') Кабардино-Балкарская
+				option(value='Калининградская область') Калининградская область
+				option(value='Калмыкия') Калмыкия
+				option(value='Калужская область') Калужская область
+				option(value='Камчатский край') Камчатский край
+				option(value='Карачаево-Черкесская') Карачаево-Черкесская
+				option(value='Карелия') Карелия
+				option(value='Кемеровская область') Кемеровская область
+				option(value='Кировская область') Кировская область
+				option(value='Коми') Коми
+				option(value='Корякский АО') Корякский АО
+				option(value='Костромская область') Костромская область
+				option(value='Краснодарский край') Краснодарский край
+				option(value='Красноярский край') Красноярский край
+				option(value='Курганская область') Курганская область
+				option(value='Курская область') Курская область
+				option(value='Ленинградская область') Ленинградская область
+				option(value='Липецкая область') Липецкая область
+				option(value='Магаданская область') Магаданская область
+				option(value='Марий Эл') Марий Эл
+				option(value='Мордовия') Мордовия
+				option(value='Московская область') Московская область
+				option(value='Мурманская область') Мурманская область
+				option(value='Ненецкий АО') Ненецкий АО
+				option(value='Нижегородская область') Нижегородская область
+				option(value='Новгородская область') Новгородская область
+				option(value='Новосибирская область') Новосибирская область
+				option(value='Омская область') Омская область
+				option(value='Оренбургская область') Оренбургская область
+				option(value='Орловская область') Орловская область
+				option(value='Пензенская область') Пензенская область
+				option(value='Пермский край') Пермский край
+				option(value='Приморский край') Приморский край
+				option(value='Псковская область') Псковская область
+				option(value='Ростовская область') Ростовская область
+				option(value='Рязанская область') Рязанская область
+				option(value='Самарская область') Самарская область
+				option(value='Саратовская область') Саратовская область
+				option(value='Саха /Якутия/') Саха /Якутия/
+				option(value='Сахалинская область') Сахалинская область
+				option(value='Свердловская область') Свердловская область
+				option(value='Северная Осетия - Алания') Северная Осетия - Алания
+				option(value='Смоленская область') Смоленская область
+				option(value='Ставропольский край') Ставропольский край
+				option(value='Таймырский (Долгано-Ненецкий) АО') Таймырский (Долгано-Ненецкий) АО
+				option(value='Тамбовская область') Тамбовская область
+				option(value='Татарстан') Татарстан
+				option(value='Тверская область') Тверская область
+				option(value='Томская область') Томская область
+				option(value='Тульская область') Тульская область
+				option(value='Тыва') Тыва
+				option(value='Тюменская область') Тюменская область
+				option(value='Удмуртская') Удмуртская
+				option(value='Ульяновская область') Ульяновская область
+				option(value='Хабаровский край') Хабаровский край
+				option(value='Хакасия') Хакасия
+				option(value='Ханты-Мансийский Автономный округ - Югра АО') Ханты-Мансийский Автономный округ - Югра АО
+				option(value='Челябинская область') Челябинская область
+				option(value='Чеченская') Чеченская
+				option(value='Чувашская') Чувашская
+				option(value='Чукотский АО') Чукотский АО
+				option(value='Ямало-Ненецкий АО') Ямало-Ненецкий АО
+				option(value='Ярославская область') Ярославская область
+		.form-group.clearfix.has-feedback
+			label(for='addres') Адрес
+			input#addres.form-control(type='text', name='addres', placeholder='Улица, дом, квартира', value='')
+			span.glyphicon.form-control-feedback
+		.text-center.form-divider.clearfix
+			button.btn.btn-avon-transparent-white.text-uppercase.text-center(type='submit') Стать представителем
+		span Я подтверждаю согласие на обработку моих персональных данных
+		input(type='hidden', name='formid', value='AVON_zayavka')
