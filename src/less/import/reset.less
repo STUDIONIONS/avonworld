@@ -1,17 +1,32 @@
+body {
+	color: #DF75E2;
+	.helvetika();
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6
+{
+	.helvetika();
+}
 h {
 	&1, &2, &3, &4, &5, &6 {
 		
 	}
 	&1, &2 {
-		
+			
 	}
 	&3, &4 {
-		
+			
 	}
 	&5, &6 {
-		
+			
 	}
 }
+
+
 .gradient-deg(@deg: 45deg; @one: #555; @two: transparent; @three: #555; @pos_one: 25%; @pos_two: 50%; @pos_three: 75%) {
     background-repeat: repeat-x;
     background-image: -webkit-linear-gradient(@deg, @one @pos_one, @two @pos_two, @three @pos_three);
@@ -54,4 +69,19 @@ a, button, input[type=button], input[type=submit], select {
 }
 .page {
 	overflow: hidden;
+}
+.table-block() {
+	&.table {
+		&-block {
+			display: table;
+			width: 100%;
+			margin-left: 0px;
+			margin-right: 0px;
+			position: relative;
+			.table-block-cell {
+				display: table-cell;
+				position: relative;
+			}
+		}
+	}
 }

@@ -1,0 +1,117 @@
+.homeleading_menu {
+	list-style: none;
+	padding-left: 0px;
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	> li {
+		&.item {
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			.transition(all .5s);
+			&:hover {
+				background-size: 105% auto;
+				.bg {
+					a {
+						background-color: rgba(0,0,0,0.6);
+						&:after {
+							top: -20px;
+							right: -20px;
+							opacity: 0.7;
+						}
+					}
+				}
+			}
+			.bg {
+				display: block;
+				overflow: hidden;
+				a {
+					display: block;
+					overflow: hidden;
+					background-color: rgba(0,0,0,0.9);
+					position: relative;
+					.transition(all .5s);
+					&, &:hover, &:focus, &:active {
+						text-decoration: none !important;
+						color: white !important;
+					}
+					&:after {
+						background-position: center;
+						background-size: 100% auto;
+						background-image: data-uri('../images/bin/tr_hm.svg');
+						background-repeat: no-repeat;
+						content: " ";
+						display: block;
+						position: absolute;
+						width: 80px;
+						height: 80px;
+						right: 0;
+						top: 0;
+						opacity: 1;
+						z-index: 2;
+						.transition(all .5s);
+					}
+					.table {
+						&-block {
+							position: relative;
+							display: table;
+							overflow: hidden;
+							height: 185px;
+							width: 100%;
+							margin-left: 0px;
+							margin-right: 0px;
+							z-index: 200;
+							&-cell {
+								display: table-cell;
+								overflow: hidden;
+								position: relative;
+								vertical-align: middle;
+								> span {
+									display: block;
+									padding-left: 15px;
+									padding-right: 15px;
+									overflow: hidden;
+									&:before {
+										display: block;
+										margin-left: auto;
+										margin-right: auto;
+										content: " ";
+										background-position: 50% 50%;
+										background-repeat: no-repeat;
+										background-size: contain;
+										width: 12px;
+										height: 12px;
+										margin-bottom: 10px;
+										background-image: data-uri('../images/bin/plus-white.svg');
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.bg {
+			
+			&_01 {
+				background-image: data-uri('../images/bin/bg_01.jpg');
+			}
+			&_02 {
+				background-image: data-uri('../images/bin/bg_02.jpg');
+			}
+			&_03 {
+				background-image: data-uri('../images/bin/bg_03.jpg');
+			}
+			&_04 {
+				background-image: data-uri('../images/bin/bg_04.jpg');
+			}
+			&_05 {
+				background-image: data-uri('../images/bin/bg_05.jpg');
+			}
+			&_06 {
+				background-image: data-uri('../images/bin/bg_06.jpg');
+			}
+		}
+	}
+}

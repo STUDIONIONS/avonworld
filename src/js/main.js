@@ -18,6 +18,7 @@ $(function(){
 		imgWidth: 992,
 		imgHeight: 1172
 	});
+	$('*[data-toggle=tooltip]').tooltip();
 	if(typeof window.thankZayavTpl != "undefined"){
 		var c = $('<div class="box-modal" />');
 			c.html(thankZayavTpl);

@@ -1,0 +1,39 @@
+.work {
+	color: #ED028C;
+	h2, h3 {
+		margin-top: 80px;
+		margin-bottom: 60px;
+		font-size: 26px;
+		font-weight: bold;
+		@media(min-width: 380px){
+			font-size: 35px;
+			font-weight: 500;
+		}
+	}
+	&_description {
+		margin-bottom: 80px;
+		font-size: 19px;
+		text-align: center;
+		p {
+			margin-bottom: 0px;
+		}
+	}
+	.buttonblock, .shicon {
+		margin-bottom: 80px;
+	}
+	.btn {
+		&-avon {
+			&-transparent {
+				&, &:focus {
+					color: #ED028C;
+					border-color: #ED028C;
+				}
+				&:hover {
+					color: white;
+					background-color: #ED028C;
+					border-color: #ED028C;
+				}
+			}
+		}
+	}
+}

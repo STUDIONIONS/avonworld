@@ -1,0 +1,58 @@
+.footer {
+	&-wrapper {
+		margin-top: 25px;
+		margin-bottom: 15px;
+		.table-block();
+		&.table {
+			&-block {
+				.table {
+					&-block {
+						&-cell {
+							padding-left: 15px;
+							padding-right: 15px;
+							vertical-align: bottom;
+							&.left, &.right {
+								text-align: center;
+							}
+							&.left {
+								h1, h2, h3, h4, h5, h6 {
+									margin-top: 0px !important;
+								}
+								@media(min-width: 700px){
+									text-align: left;
+								}
+							}
+							&.right {
+								@media(min-width: 700px){
+									text-align: right;
+								}
+							}
+							@media(max-width:699px){
+								display: block;
+								&.left {
+									padding-bottom: 15px;
+								}
+								&.right {
+									padding-top: 15px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.bottom {
+		.clearfix();
+		padding-top: 30px;
+		padding-bottom: 30px;
+		background-color: @avon-btn-bg;
+		color: #ffffff;
+		text-align: center;
+		p, .copyright {
+			margin-bottom: 0px;
+			margin-top: 0px;
+			.clearfix();
+		}
+	}
+}

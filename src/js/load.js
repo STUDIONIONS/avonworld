@@ -25,7 +25,7 @@ yepnope({
 			});
 		},
 		hypher: function(){
-			
+			$('.agent-step li p, .hypher').hyphenate('ru');
 		}
 	}
 });

@@ -1,0 +1,34 @@
+.shicon {
+	text-align: center;
+	&-wrapper {
+		display: inline-block;
+		list-style: none !important;
+		padding-left: 0px;
+		> li {
+			display: block;
+			float: left;
+			> .tooltip {
+				max-width: 148px;
+			}
+			a {
+				display: block;
+				margin-right: 5px;
+				margin-left: 5px;
+				font-size: 42px;
+				@media(min-width: 355px){
+					font-size: 50px;
+				}
+				.transition(all .3s);
+				&, &:hover, &:focus, &:active {
+					text-decoration: none;
+				}
+				&, &:focus {
+					color: #DF75E2;
+				}
+				&:hover {
+					color: #ED028C;
+				}
+			}
+		}
+	}
+}
