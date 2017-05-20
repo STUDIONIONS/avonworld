@@ -253,8 +253,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/glyphicons-halflings-regular.eot');
+  src: url('/assets/templates/projectsoft/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/assets/templates/projectsoft/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6748,8 +6748,8 @@ button.close {
   font-family: 'slick';
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/slick.eot');
-  src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/slick.eot');
+  src: url('/assets/templates/projectsoft/fonts/slick.eot?#iefix') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/slick.woff') format('woff'), url('/assets/templates/projectsoft/fonts/slick.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -7534,15 +7534,35 @@ li.fancybox-thumbs-loading {
 
 @font-face {
   font-family: 'Helvetika';
-  src: url('../fonts/Helvetika.eot');
-  src: url('../fonts/Helvetika.woff2') format('woff2'), url('../fonts/Helvetika.woff') format('woff'), url('../fonts/Helvetika.ttf') format('truetype'), url('../fonts/Helvetika.svg#Helvetika') format('svg'), url('../fonts/Helvetika.eot?#iefix') format('embedded-opentype');
+  src: url('/assets/templates/projectsoft/fonts/Helvetika.eot');
+  src: url('/assets/templates/projectsoft/fonts/Helvetika.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/Helvetika.woff') format('woff'), url('/assets/templates/projectsoft/fonts/Helvetika.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/Helvetika.svg#Helvetika') format('svg'), url('/assets/templates/projectsoft/fonts/Helvetika.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
+  font-family: 'AGAvantGardeCyr';
+  src: url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.eot');
+  src: url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.eot') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.woff') format('woff'), url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.svg#AGAvantGardeCyr') format('svg');
+}
+@font-face {
+  font-family: 'AGOptimaCyr';
+  src: url('/assets/templates/projectsoft/fonts/AGOptimaCyr.eot');
+  src: url('/assets/templates/projectsoft/fonts/AGOptimaCyr.eot') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AGOptimaCyr.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/AGOptimaCyr.woff') format('woff'), url('/assets/templates/projectsoft/fonts/AGOptimaCyr.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/AGOptimaCyr.svg#AGOptimaCyr') format('svg');
+}
+@font-face {
+  font-family: 'AmbassadoreType';
+  src: url('/assets/templates/projectsoft/fonts/AmbassadoreType.eot');
+  src: url('/assets/templates/projectsoft/fonts/AmbassadoreType.eot') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AmbassadoreType.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/AmbassadoreType.woff') format('woff'), url('/assets/templates/projectsoft/fonts/AmbassadoreType.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/AmbassadoreType.svg#AmbassadoreType') format('svg');
+}
+@font-face {
+  font-family: 'AGNewHandbook';
+  src: url('/assets/templates/projectsoft/fonts/AGNewHandbook.eot');
+  src: url('/assets/templates/projectsoft/fonts/AGNewHandbook.eot') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AGNewHandbook.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/AGNewHandbook.woff') format('woff'), url('/assets/templates/projectsoft/fonts/AGNewHandbook.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/AGNewHandbook.svg#AGNewHandbook') format('svg');
+}
+@font-face {
   font-family: 'AvonWorldRussia';
-  src: url('../fonts/AvonWorldRussia.eot?f0fok2');
-  src: url('../fonts/AvonWorldRussia.eot?f0fok2#iefix') format('embedded-opentype'), url('../fonts/AvonWorldRussia.ttf?f0fok2') format('truetype'), url('../fonts/AvonWorldRussia.woff?f0fok2') format('woff'), url('../fonts/AvonWorldRussia.svg?f0fok2#AvonWorldRussia') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/AvonWorldRussia.eot?f0fok2');
+  src: url('/assets/templates/projectsoft/fonts/AvonWorldRussia.eot?f0fok2#iefix') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AvonWorldRussia.ttf?f0fok2') format('truetype'), url('/assets/templates/projectsoft/fonts/AvonWorldRussia.woff?f0fok2') format('woff'), url('/assets/templates/projectsoft/fonts/AvonWorldRussia.svg?f0fok2#AvonWorldRussia') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -7581,8 +7601,8 @@ li.fancybox-thumbs-loading {
 }
 @font-face {
   font-family: 'AvonBusinesSite';
-  src: url('../fonts/AvonBusinesSite.eot?z3o3dl');
-  src: url('../fonts/AvonBusinesSite.eot?z3o3dl#iefix') format('embedded-opentype'), url('../fonts/AvonBusinesSite.ttf?z3o3dl') format('truetype'), url('../fonts/AvonBusinesSite.woff?z3o3dl') format('woff'), url('../fonts/AvonBusinesSite.svg?z3o3dl#AvonBusinesSite') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/AvonBusinesSite.eot?z3o3dl');
+  src: url('/assets/templates/projectsoft/fonts/AvonBusinesSite.eot?z3o3dl#iefix') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AvonBusinesSite.ttf?z3o3dl') format('truetype'), url('/assets/templates/projectsoft/fonts/AvonBusinesSite.woff?z3o3dl') format('woff'), url('/assets/templates/projectsoft/fonts/AvonBusinesSite.svg?z3o3dl#AvonBusinesSite') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -7695,47 +7715,47 @@ li.fancybox-thumbs-loading {
 }
 @font-face {
   font-family: 'Cuprum-Regular';
-  src: url('../fonts/Cuprum-Regular.woff') format('woff'), url('../fonts/Cuprum-Regular.ttf') format('truetype'), url('../fonts/Cuprum-Regular.svg#Cuprum-Regular') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/Cuprum-Regular.woff') format('woff'), url('/assets/templates/projectsoft/fonts/Cuprum-Regular.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/Cuprum-Regular.svg#Cuprum-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'cuprum';
-  src: url('../fonts/cuprum.eot');
-  src: url('../fonts/cuprum.woff2') format('woff2'), url('../fonts/cuprum.eot?#iefix') format('embedded-opentype');
+  src: url('/assets/templates/projectsoft/fonts/cuprum.eot');
+  src: url('/assets/templates/projectsoft/fonts/cuprum.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/cuprum.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Cuprum-Bold';
-  src: url('../fonts/Cuprum-Bold.woff') format('woff'), url('../fonts/Cuprum-Bold.ttf') format('truetype'), url('../fonts/Cuprum-Bold.svg#Cuprum-Bold') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/Cuprum-Bold.woff') format('woff'), url('/assets/templates/projectsoft/fonts/Cuprum-Bold.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/Cuprum-Bold.svg#Cuprum-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'cuprumbold';
-  src: url('../fonts/cuprumbold.eot');
-  src: url('../fonts/cuprumbold.woff2') format('woff2'), url('../fonts/cuprumbold.eot?#iefix') format('embedded-opentype');
+  src: url('/assets/templates/projectsoft/fonts/cuprumbold.eot');
+  src: url('/assets/templates/projectsoft/fonts/cuprumbold.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/cuprumbold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Cuprum-Italic';
-  src: url('../fonts/Cuprum-Italic.woff') format('woff'), url('../fonts/Cuprum-Italic.ttf') format('truetype'), url('../fonts/Cuprum-Italic.svg#Cuprum-Italic') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/Cuprum-Italic.woff') format('woff'), url('/assets/templates/projectsoft/fonts/Cuprum-Italic.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/Cuprum-Italic.svg#Cuprum-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'cuprumitalic';
-  src: url('../fonts/cuprumitalic.eot');
-  src: url('../fonts/cuprumitalic.woff2') format('woff2'), url('../fonts/cuprumitalic.eot?#iefix') format('embedded-opentype');
+  src: url('/assets/templates/projectsoft/fonts/cuprumitalic.eot');
+  src: url('/assets/templates/projectsoft/fonts/cuprumitalic.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/cuprumitalic.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SocPs';
-  src: url('../fonts/SocPs.eot?7gzd63');
-  src: url('../fonts/SocPs.eot?7gzd63#iefix') format('embedded-opentype'), url('../fonts/SocPs.ttf?7gzd63') format('truetype'), url('../fonts/SocPs.woff?7gzd63') format('woff'), url('../fonts/SocPs.svg?7gzd63#SocPs') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/SocPs.eot?7gzd63');
+  src: url('/assets/templates/projectsoft/fonts/SocPs.eot?7gzd63#iefix') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/SocPs.ttf?7gzd63') format('truetype'), url('/assets/templates/projectsoft/fonts/SocPs.woff?7gzd63') format('woff'), url('/assets/templates/projectsoft/fonts/SocPs.svg?7gzd63#SocPs') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -7801,7 +7821,7 @@ li.fancybox-thumbs-loading {
 body {
   color: #DF75E2;
   font-size: 16px;
-  font-family: 'Helvetika';
+  font-family: 'AGAvantGardeCyr';
 }
 h1,
 .h1,
@@ -7815,7 +7835,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: 'Helvetika';
+  font-family: 'AGAvantGardeCyr';
 }
 img {
   max-width: 100%;
@@ -7868,7 +7888,9 @@ selectactive {
 }
 .btn-avon,
 .btn-avon-transparent,
-.btn-avon-transparent-gold {
+.btn-avon-transparent-gold,
+.btn-avon-transparent-red,
+.btn-avon-transparent-white {
   transition: all 0.5s;
   min-width: 200px;
   text-align: center;
@@ -7895,7 +7917,7 @@ selectactive {
 .btn-avon-transparent-gold:hover {
   background-color: #FFE957;
   border: 1px solid #FFE957;
-  color: #DF75E2;
+  color: #ED028C;
 }
 .btn-avon-transparent-white,
 .btn-avon-transparent-white:focus,
@@ -7907,7 +7929,19 @@ selectactive {
 .btn-avon-transparent-white:hover {
   background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  color: #DF75E2;
+  color: #ED028C;
+}
+.btn-avon-transparent-red,
+.btn-avon-transparent-red:focus,
+.btn-avon-transparent-red:active {
+  background-color: transparent;
+  border: 1px solid #ED028C;
+  color: #ED028C;
+}
+.btn-avon-transparent-red:hover {
+  background-color: #ED028C;
+  border: 1px solid #ED028C;
+  color: #FFFFFF;
 }
 .background_work {
   background-position: 50% 50%;
@@ -8063,6 +8097,7 @@ selectactive {
 }
 .header .nav li a {
   min-width: 170px;
+  text-transform: uppercase;
 }
 .header .nav li a,
 .header .nav li a:focus {
@@ -8325,6 +8360,8 @@ selectactive {
   background-repeat: no-repeat;
   background-size: 100% auto;
   transition: all 0.5s;
+  font-family: 'Helvetika';
+  font-size: 14px;
 }
 .homeleading_menu > li.item:hover {
   background-size: 105% auto;
@@ -8774,6 +8811,9 @@ selectactive {
 .getby_avon__table p {
   margin-left: 65px;
 }
+.footer {
+  font-family: 'Helvetika';
+}
 .footer-wrapper {
   margin-top: 25px;
   margin-bottom: 15px;
@@ -8962,4 +9002,32 @@ selectactive {
 .outer-carousel .carousel-control.right > span.icon-next:before {
   border-top: 2px solid #DF75E2;
   border-right: 2px solid #DF75E2;
+}
+.section_catalog_content_wrapper {
+  margin-bottom: 80px;
+}
+.section_catalog_content_wrapper img {
+  max-width: 100%;
+}
+.section_catalog_content_wrapper img.img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section_catalog_content .btncatalog_wrapper {
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+.catalog {
+  padding-bottom: 80px;
+}
+.catalog h1.title {
+  color: #ED028C;
+  font-family: 'AGAvantGardeCyr';
+  font-size: 25px;
+  margin-top: 80px;
+}
+.catalog .title-description {
+  color: #ED028C;
+  margin-bottom: 30px;
 }

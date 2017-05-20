@@ -1,14 +1,34 @@
 @font-face {
   font-family: 'Helvetika';
-  src: url('../fonts/Helvetika.eot');
-  src: url('../fonts/Helvetika.woff2') format('woff2'), url('../fonts/Helvetika.woff') format('woff'), url('../fonts/Helvetika.ttf') format('truetype'), url('../fonts/Helvetika.svg#Helvetika') format('svg'), url('../fonts/Helvetika.eot?#iefix') format('embedded-opentype');
+  src: url('/assets/templates/projectsoft/fonts/Helvetika.eot');
+  src: url('/assets/templates/projectsoft/fonts/Helvetika.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/Helvetika.woff') format('woff'), url('/assets/templates/projectsoft/fonts/Helvetika.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/Helvetika.svg#Helvetika') format('svg'), url('/assets/templates/projectsoft/fonts/Helvetika.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
+  font-family: 'AGAvantGardeCyr';
+  src: url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.eot');
+  src: url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.eot') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.woff') format('woff'), url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/AGAvantGardeCyr.svg#AGAvantGardeCyr') format('svg');
+}
+@font-face {
+  font-family: 'AGOptimaCyr';
+  src: url('/assets/templates/projectsoft/fonts/AGOptimaCyr.eot');
+  src: url('/assets/templates/projectsoft/fonts/AGOptimaCyr.eot') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AGOptimaCyr.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/AGOptimaCyr.woff') format('woff'), url('/assets/templates/projectsoft/fonts/AGOptimaCyr.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/AGOptimaCyr.svg#AGOptimaCyr') format('svg');
+}
+@font-face {
+  font-family: 'AmbassadoreType';
+  src: url('/assets/templates/projectsoft/fonts/AmbassadoreType.eot');
+  src: url('/assets/templates/projectsoft/fonts/AmbassadoreType.eot') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AmbassadoreType.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/AmbassadoreType.woff') format('woff'), url('/assets/templates/projectsoft/fonts/AmbassadoreType.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/AmbassadoreType.svg#AmbassadoreType') format('svg');
+}
+@font-face {
+  font-family: 'AGNewHandbook';
+  src: url('/assets/templates/projectsoft/fonts/AGNewHandbook.eot');
+  src: url('/assets/templates/projectsoft/fonts/AGNewHandbook.eot') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AGNewHandbook.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/AGNewHandbook.woff') format('woff'), url('/assets/templates/projectsoft/fonts/AGNewHandbook.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/AGNewHandbook.svg#AGNewHandbook') format('svg');
+}
+@font-face {
   font-family: 'AvonWorldRussia';
-  src: url('../fonts/AvonWorldRussia.eot?f0fok2');
-  src: url('../fonts/AvonWorldRussia.eot?f0fok2#iefix') format('embedded-opentype'), url('../fonts/AvonWorldRussia.ttf?f0fok2') format('truetype'), url('../fonts/AvonWorldRussia.woff?f0fok2') format('woff'), url('../fonts/AvonWorldRussia.svg?f0fok2#AvonWorldRussia') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/AvonWorldRussia.eot?f0fok2');
+  src: url('/assets/templates/projectsoft/fonts/AvonWorldRussia.eot?f0fok2#iefix') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AvonWorldRussia.ttf?f0fok2') format('truetype'), url('/assets/templates/projectsoft/fonts/AvonWorldRussia.woff?f0fok2') format('woff'), url('/assets/templates/projectsoft/fonts/AvonWorldRussia.svg?f0fok2#AvonWorldRussia') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -47,8 +67,8 @@
 }
 @font-face {
   font-family: 'AvonBusinesSite';
-  src: url('../fonts/AvonBusinesSite.eot?z3o3dl');
-  src: url('../fonts/AvonBusinesSite.eot?z3o3dl#iefix') format('embedded-opentype'), url('../fonts/AvonBusinesSite.ttf?z3o3dl') format('truetype'), url('../fonts/AvonBusinesSite.woff?z3o3dl') format('woff'), url('../fonts/AvonBusinesSite.svg?z3o3dl#AvonBusinesSite') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/AvonBusinesSite.eot?z3o3dl');
+  src: url('/assets/templates/projectsoft/fonts/AvonBusinesSite.eot?z3o3dl#iefix') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/AvonBusinesSite.ttf?z3o3dl') format('truetype'), url('/assets/templates/projectsoft/fonts/AvonBusinesSite.woff?z3o3dl') format('woff'), url('/assets/templates/projectsoft/fonts/AvonBusinesSite.svg?z3o3dl#AvonBusinesSite') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -161,47 +181,47 @@
 }
 @font-face {
   font-family: 'Cuprum-Regular';
-  src: url('../fonts/Cuprum-Regular.woff') format('woff'), url('../fonts/Cuprum-Regular.ttf') format('truetype'), url('../fonts/Cuprum-Regular.svg#Cuprum-Regular') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/Cuprum-Regular.woff') format('woff'), url('/assets/templates/projectsoft/fonts/Cuprum-Regular.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/Cuprum-Regular.svg#Cuprum-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'cuprum';
-  src: url('../fonts/cuprum.eot');
-  src: url('../fonts/cuprum.woff2') format('woff2'), url('../fonts/cuprum.eot?#iefix') format('embedded-opentype');
+  src: url('/assets/templates/projectsoft/fonts/cuprum.eot');
+  src: url('/assets/templates/projectsoft/fonts/cuprum.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/cuprum.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Cuprum-Bold';
-  src: url('../fonts/Cuprum-Bold.woff') format('woff'), url('../fonts/Cuprum-Bold.ttf') format('truetype'), url('../fonts/Cuprum-Bold.svg#Cuprum-Bold') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/Cuprum-Bold.woff') format('woff'), url('/assets/templates/projectsoft/fonts/Cuprum-Bold.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/Cuprum-Bold.svg#Cuprum-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'cuprumbold';
-  src: url('../fonts/cuprumbold.eot');
-  src: url('../fonts/cuprumbold.woff2') format('woff2'), url('../fonts/cuprumbold.eot?#iefix') format('embedded-opentype');
+  src: url('/assets/templates/projectsoft/fonts/cuprumbold.eot');
+  src: url('/assets/templates/projectsoft/fonts/cuprumbold.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/cuprumbold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Cuprum-Italic';
-  src: url('../fonts/Cuprum-Italic.woff') format('woff'), url('../fonts/Cuprum-Italic.ttf') format('truetype'), url('../fonts/Cuprum-Italic.svg#Cuprum-Italic') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/Cuprum-Italic.woff') format('woff'), url('/assets/templates/projectsoft/fonts/Cuprum-Italic.ttf') format('truetype'), url('/assets/templates/projectsoft/fonts/Cuprum-Italic.svg#Cuprum-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'cuprumitalic';
-  src: url('../fonts/cuprumitalic.eot');
-  src: url('../fonts/cuprumitalic.woff2') format('woff2'), url('../fonts/cuprumitalic.eot?#iefix') format('embedded-opentype');
+  src: url('/assets/templates/projectsoft/fonts/cuprumitalic.eot');
+  src: url('/assets/templates/projectsoft/fonts/cuprumitalic.woff2') format('woff2'), url('/assets/templates/projectsoft/fonts/cuprumitalic.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SocPs';
-  src: url('../fonts/SocPs.eot?7gzd63');
-  src: url('../fonts/SocPs.eot?7gzd63#iefix') format('embedded-opentype'), url('../fonts/SocPs.ttf?7gzd63') format('truetype'), url('../fonts/SocPs.woff?7gzd63') format('woff'), url('../fonts/SocPs.svg?7gzd63#SocPs') format('svg');
+  src: url('/assets/templates/projectsoft/fonts/SocPs.eot?7gzd63');
+  src: url('/assets/templates/projectsoft/fonts/SocPs.eot?7gzd63#iefix') format('embedded-opentype'), url('/assets/templates/projectsoft/fonts/SocPs.ttf?7gzd63') format('truetype'), url('/assets/templates/projectsoft/fonts/SocPs.woff?7gzd63') format('woff'), url('/assets/templates/projectsoft/fonts/SocPs.svg?7gzd63#SocPs') format('svg');
   font-weight: normal;
   font-style: normal;
 }

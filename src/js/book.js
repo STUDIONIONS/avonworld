@@ -109,6 +109,8 @@ $(function(){
 					$("#slider-bar").show();
 					$(".book-nav").show();
 					makeBookFn();
+					var scrollTop = $('#canvas').offset().top;
+					$(document).scrollTop(scrollTop);
 					setTimeout(function(){
 						$('.book-avoncatalog').removeClass('scaling');
 					}, 1000);

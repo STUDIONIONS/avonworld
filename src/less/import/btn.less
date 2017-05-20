@@ -4,7 +4,7 @@
 		border-radius: 0px;
 	}
 	&-avon {
-		&, &-transparent, &-transparent-gold {
+		&, &-transparent, &-transparent-gold, &-transparent-red, &-transparent-white {
 			.transition(all .5s);
 			min-width: 200px;
 			.text-center();
@@ -29,7 +29,7 @@
 				&:hover {
 					background-color: #FFE957;
 					border: 1px solid #FFE957;
-					color: @avon-btn-bg;
+					color: #ED028C;
 				}
 			}
 			&-white {
@@ -41,7 +41,19 @@
 				&:hover {
 					background-color: #FFFFFF;
 					border: 1px solid #FFFFFF;
-					color: @avon-btn-bg;
+					color: #ED028C;
+				}
+			}
+			&-red {
+				&, &:focus, &:active {
+					background-color: transparent;
+					border: 1px solid #ED028C;
+					color: #ED028C;
+				}
+				&:hover {
+					background-color: #ED028C;
+					border: 1px solid #ED028C;
+					color: #FFFFFF;
 				}
 			}
 		}

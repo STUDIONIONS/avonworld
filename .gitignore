@@ -24,3 +24,12 @@
 /assets/snippets/*
 /assets/tvs/*
 /assets/*.html
+/assets/templates/index.html
+/assets/templates/help/*
+/*.txt
+/*.install.jpg
+/*.manage.jpg
+/*.php
+/CONTRIBUTORS.md
+/HISTORY.md
+/.hitaccess
